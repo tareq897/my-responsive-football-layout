@@ -1,0 +1,299 @@
+ /* ===========
+ Google Fonts
+ =============*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+ /* ========Banner section============= */
+ body {
+     margin: 0;
+ }
+
+ .main {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ h1 {
+     font-weight: bolder;
+     font-size: 40px;
+     line-height: 15px;
+     color: white;
+
+
+
+ }
+
+ .flexibility {
+
+     display: flex;
+     margin-bottom: 5%;
+
+ }
+
+ .half-width {
+     width: 50%;
+     padding-left: 5%;
+
+ }
+
+ .half-width img {
+     width: 80%;
+
+ }
+
+ .btn {
+     text-decoration: none;
+     background-color: #E02C6D;
+     width: 168px;
+     height: 44px;
+     padding: 10px, 24px, 10px, 24px;
+     color: white;
+     font-weight: 500;
+
+
+ }
+
+ .background {
+     background-color: rgb(38, 16, 163);
+     padding: 50px;
+     margin-bottom: 20px;
+ }
+
+ /* ========Creating transition effect on the banner section====== */
+ .flexibility:hover .banner {
+     transform: scale(1.3) rotate(30deg);
+     transition: 4s ease-in-out;
+ }
+
+ /* =========adding player infos  CSS========= */
+ .card {
+     width: 250px;
+     text-align: center;
+     margin-top: 30px;
+     border: 10px solid white;
+     box-shadow: 2px 2px 2px 2px grey;
+
+ }
+
+ .card img {
+     width: 100%;
+ }
+
+ .players {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px;
+     justify-content: center;
+
+
+ }
+
+ .flexible-container {
+     display: flex;
+     margin-bottom: 150px;
+ }
+
+ .half-width {
+     width: 50%;
+     padding-left: 2%;
+ }
+
+
+ /* =========Adding videos of latest news CSS========= */
+
+ .box {
+     width: 40%;
+     height: 450px;
+     margin-left: 5%;
+     padding-left: 20px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 40px grey;
+     justify-content: space-evenly;
+
+ }
+
+
+ #orangered {
+     border: 10px solid orangered;
+
+ }
+
+ #blue {
+     border: 10px solid blue;
+
+
+ }
+
+ iframe {
+     padding-right: 10%;
+ }
+
+ /* =============Hall of fame album CSS======== */
+
+
+ .album h1 {
+     font-weight: 700;
+     font-size: 46px;
+     color: goldenrod;
+     text-align: center;
+     padding-top: 30px;
+ }
+
+ .album {
+     height: 500px;
+     background-color: purple;
+ }
+
+ .photo {
+     height: 140px;
+     width: 164px;
+
+
+ }
+
+ .row1 {
+     display: flex;
+     justify-content: space-evenly;
+     padding-left: 78px;
+     padding-right: 58px;
+ }
+
+ .row1 img {
+     width: 150px;
+     padding-top: 6px;
+     padding-left: 7px;
+ }
+
+ .row2 {
+     display: flex;
+     justify-content: space-evenly;
+     padding-left: 78px;
+     padding-right: 58px;
+     padding-top: 30px;
+ }
+
+ .row2 img {
+     width: 150px;
+     padding: 5px;
+ }
+
+
+ p {
+     color: indianred;
+     padding: 0%;
+     margin: 0%;
+
+ }
+
+
+ /* ============footer section with logo ==== */
+
+
+ .logo img {
+     height: 110px;
+     width: 350px;
+     margin-top: 30px;
+     margin-left: 35%;
+
+ }
+
+ /* ==========adding social sites CSS======= */
+
+ .social-sites {
+
+     margin-left: 45%;
+
+ }
+
+ .fab,
+ .web {
+     color: gray;
+     font-size: 30px;
+     display: inline-block;
+     margin: 0 10px 0 0;
+
+
+ }
+
+ /* =======footer end  copyright section ======== */
+
+ .copyright {
+
+     text-align: center;
+     text-size-adjust: 40px;
+     margin-left: 4%;
+ }
+
+
+ /* ======Media queries for for responsive mobile layout banner section===== */
+
+ @media only screen and (max-width:700px) {
+     .container {
+         width: 180%;
+         position: absolute;
+     }
+
+     /* ========media quries for body section========== */
+
+     .half-width,
+     .card,
+     .foot {
+         grid-template-columns: repeat(1, 1fr);
+         align-items: center;
+     }
+
+     .container,
+     .card,
+         {
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .logo {
+         margin-left: 150px;
+     }
+
+     .social-sites {
+         text-size-adjust: 20px;
+
+         margin-left: 170px;
+
+     }
+
+     .copyright {
+
+         text-size-adjust: 3px;
+         margin-left: 50px;
+
+     }
+
+
+
+ }
+
+
+ @media only screen and (max-width: 688px) {
+     .players {
+
+         padding-top: 300px;
+     }
+
+     .player-details {
+
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         grid-gap: 30px;
+     }
+
+     .card {
+         width: 330px;
+         height: 474px;
+         background-color: white;
+         box-shadow: 0px 0px 2px 1px gray;
+         margin-right: 10px;
+     }
+ }
